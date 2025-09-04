@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+  <title>마이리얼트립</title>
+
+  <!-- favicon -->
+  <link rel="icon" href="../favicon.png">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- font -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+
+  <!-- style sheet -->
+  <link rel="stylesheet" href="../css/default.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="./css/sub.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  
+  <!-- gsap -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+
+  <!-- js -->
+  <script src="./js/sub.js" defer></script>
+</head>
+<body>
+  <!-- header -->
+  <div class="header-outer">
+    <header class="header">
+      <div class="header-container">
+        <a href="../index.html" class="logo"><img src="./images/logo/logo.svg" alt="로고"></a>
+        <div class="search-box pc">
+          <input type="search">
+          <div class="search-icon"></div>
+        </div><!--search box-->
+        <div class="header-btn pc recently-btn">
+          <div class="header-icon recently-icon"></div>
+          <p class="icon-label">최근</p>
+        </div><!--header icon box-->
+        <div class="header-btn pc bookmark-btn">
+          <div class="header-icon bookmark-icon"></div>  
+          <p class="icon-label">찜</p>
+        </div><!--header icon box-->
+      </div><!--header container-->
+  
+      <div class="header-btn mobile">
+        <div class="header-icon search-icon"></div>
+        <div class="header-icon bell-icon"></div>
+        <div class="header-icon bag-icon"></div>
+      </div><!--header icon box-->
+      <a href="#!" class="login-btn pc">로그인 및 회원가입</a>
+    </header>
+  </div>
+
+  <ul class="gnb">
+    <li class="menu-btn">
+      <div class="menu-icon"></div>
+      <p>전체 메뉴</p>
+    </li>
+    <li class="mobile">
+      <a href="#!">해외여행</a>
+    </li>
+    <li class="mobile">
+      <a href="#!">국내여행</a>
+    </li>
+    <li class="mobile">
+      <a href="#!">항공</a>
+    </li>
+    <li class="mobile">
+      <a href="#!">숙소</a>
+      <div class="gnb-lv2">
+        <ul>
+          <li><a href="#!">해외숙소</a></li>
+          <li><a href="#!">국내숙소</a></li>
+          <li><a href="#!">한인민박</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="mobile">
+      <a href="#!">투어&centerdot;티켓</a>
+    </li>
+    <li>
+      <a href="#!">교통</a>
+      <div class="gnb-lv2">
+        <ul>
+          <li><a href="#!">렌터카</a></li>
+          <li><a href="#!">유럽열차</a></li>
+          <li><a href="#!">크루즈&centerdot;페리</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a href="#!">기획전</a>
+      <div class="gnb-lv2">
+        <ul>
+          <li><a href="#!">키즈</a></li>
+          <li><a href="#!">해외 골프</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a href="#!">이벤트</a>
+      <div class="gnb-lv2">
+        <ul>
+          <li><a href="#!">숙박 페스타</a></li>
+          <li><a href="#!">할인 이벤트</a></li>
+          <li><a href="#!">국내&centerdot;해외특가</a></li>
+          <li><a href="#!">호텔특가</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a href="#!">여행준비</a>
+      <div class="gnb-lv2">
+        <ul>
+          <li><a href="#!">여행용품</a></li>
+          <li><a href="#!">여행자 보험</a></li>
+          <li><a href="#!">이심&centerdot;유심</a></li>
+        </ul>      
+      </div>
+    </li>
+  </ul><!--gnb-->
+
+  <nav class="pc-category">
+    <ul>
+      <li>
+        <a href="#!">해외여행</a>
+      </li>
+      <li>
+        <a href="#!">국내여행</a>
+      </li>
+      <li>
+        <a href="#!">항공</a>
+      </li>
+      <li>
+        <a href="#!">숙소</a>
+        <ul class="category-lv2">
+          <li><a href="#!">해외숙소</a></li>
+          <li><a href="#!">국내숙소</a></li>
+          <li><a href="#!">한인민박</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#!">투어&centerdot;티켓</a>
+      </li>
+      <li>
+        <a href="#!">교통</a>
+        <ul class="category-lv2">
+          <li><a href="#!">렌터카</a></li>
+          <li><a href="#!">유럽열차</a></li>
+          <li><a href="#!">크루즈&centerdot;페리</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#!">기획전</a>
+        <ul class="category-lv2">
+          <li><a href="#!">키즈</a></li>
+          <li><a href="#!">해외 골프</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#!">이벤트</a>
+        <ul class="category-lv2">
+          <li><a href="#!">숙박 페스타</a></li>
+          <li><a href="#!">할인 이벤트</a></li>
+          <li><a href="#!">국내&centerdot;해외특가</a></li>
+          <li><a href="#!">호텔특가</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#!">여행준비</a>
+        <ul class="category-lv2">
+          <li><a href="#!">여행용품</a></li>
+          <li><a href="#!">여행자 보험</a></li>
+          <li><a href="#!">이심&centerdot;유심</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav><!--pc category-->
+
+  <nav class="mobile-category">
+    <div class="close-bar">
+      <div class="close-icon">close</div>
+    </div>    
+    <ul>
+      <li>
+        <a href="#!" class="category-title">해외여행</a>
+      </li>
+      <li>
+        <a href="#!" class="category-title">국내여행</a>
+      </li>
+      <li>
+        <a href="#!" class="category-title">항공</a>
+      </li>
+      <li>
+        <p class="category-title">숙소<i class="fa-solid fa-chevron-down open-i"></i><i class="fa-solid fa-chevron-up close-i"></i></p>        
+        <ul class="category-lv2">
+          <li><a href="#!">전체</a></li>
+          <li><a href="#!">해외숙소</a></li>
+          <li><a href="#!">국내숙소</a></li>
+          <li><a href="#!">한인민박</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#!" class="category-title">투어&centerdot;티켓</a>
+      </li>
+      <li>
+        <p class="category-title">교통<i class="fa-solid fa-chevron-down open-i"></i><i class="fa-solid fa-chevron-up close-i"></i></p>        
+        <ul class="category-lv2">
+          <li><a href="#!">전체</a></li>
+          <li><a href="#!">렌터카</a></li>
+          <li><a href="#!">유럽열차</a></li>
+          <li><a href="#!">크루즈&centerdot;페리</a></li>
+        </ul>
+      </li>
+      <li>
+        <p class="category-title">기획전<i class="fa-solid fa-chevron-down open-i"></i><i class="fa-solid fa-chevron-up close-i"></i></p>        
+        <ul class="category-lv2">
+          <li><a href="#!">전체</a></li>
+          <li><a href="#!">키즈</a></li>
+          <li><a href="#!">해외 골프</a></li>
+        </ul>
+      </li>
+      <li>
+        <p class="category-title">이벤트<i class="fa-solid fa-chevron-down open-i"></i><i class="fa-solid fa-chevron-up close-i"></i></p>
+        <ul class="category-lv2">
+          <li><a href="#!">전체</a></li>
+          <li><a href="#!">숙박 페스타</a></li>
+          <li><a href="#!">할인 이벤트</a></li>
+          <li><a href="#!">국내&centerdot;해외특가</a></li>
+          <li><a href="#!">호텔특가</a></li>
+        </ul>
+      </li>
+      <li>
+        <p class="category-title">여행준비<i class="fa-solid fa-chevron-down open-i"></i><i class="fa-solid fa-chevron-up close-i"></i></p>
+        <ul class="category-lv2">
+          <li><a href="#!">전체</a></li>
+          <li><a href="#!">여행용품</a></li>
+          <li><a href="#!">여행자 보험</a></li>
+          <li><a href="#!">이심&centerdot;유심</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav><!--mobile category-->
+  
+  <!-- main banner -->
+  <div class="main-banner">
+    <picture>
+      <source media="(min-width: 1070px)" srcset="./images/banner/sub_banner_wide.jpg">
+      <source media="(min-width: 769px)" srcset="./images/banner/sub_banner_pc.jpg">
+      <source media="(min-width: 601px)" srcset="./images/banner/sub_banner_tablet.jpg">
+      <source media="(min-width: 320px)" srcset="./images/banner/sub_banner_mobile.jpg">
+      <img src="./images/banner/sub_banner.jpg" alt="메인 이미지">
+    </picture>
+  </div><!-- main banner-->
+
+  <!-- benefit -->
+  <p class="section-title">
+    다카마쓰로 떠나는<br/>마이리얼트립 만의 혜택
+  </p>
+  <section class="benefit-section">
+    <div class="benefit">
+      <div class="benefit-img">
+        <img src="./images/benefit/benefit_hotel.png" alt="호텔 예약 그림">
+      </div>
+      <div class="benefit-info">
+        <p class="benefit-title">복잡한 예약은 NO!</p>
+        <p class="benefit-txt">
+          관광지 주변,<br/>안전하고 편안한 제휴 호텔 예약
+        </p>
+      </div>
+    </div><!--benefit-->
+    <div class="benefit">
+      <div class="benefit-img">
+        <img src="./images/benefit/benefit_ticket.png" alt="특가 항공권 그림">
+      </div>
+      <div class="benefit-info">
+        <p class="benefit-title">선착순 특가 항공권</p>
+        <p class="benefit-txt">
+          인천 - 다카마쓰 왕복 항공권을 선착순 1000명 제공
+        </p>
+      </div>
+    </div><!--benefit-->
+    <div class="benefit">
+      <div class="benefit-img">
+        <img src="./images/benefit/benefit_food.png" alt="음식 그림">
+      </div>
+      <div class="benefit-info">
+        <p class="benefit-title">현지 먹방 투어</p>
+        <p class="benefit-txt">
+          한국인 입맛에 맞춤형!<br/>흔하지 않은 현지음식 코스 제공
+        </p>
+      </div>
+    </div><!--benefit-->
+    <div class="benefit">
+      <div class="benefit-img">
+        <img src="./images/benefit/benefit_shopping.png" alt="쇼핑 그림">
+      </div>
+      <div class="benefit-info">
+        <p class="benefit-title">자유로운 쇼핑</p>
+        <p class="benefit-txt">
+          쇼핑샵 구매 강요 NO!<br/>자유로운 쇼핑 일정으로 개인에게 맞는 기념품 쇼핑
+        </p>
+      </div>
+    </div><!--benefit-->
+  </section>
+
+  <!-- attraction -->
+  <div class="attraction-section-outer">
+    <p class="section-title">매력적인 시골 감성과 예술을 담은<br/>일본 소도시, 다카마쓰</p>
+    <section class="attraction-section">
+      <div class="attraction">
+        <div class="attraction-img">
+          <img src="./images/attraction/sub_attraction01.jpg" alt="리츠린 정원">
+        </div>
+        <div class="attraction-info">
+          <p class="attraction-title">전통미 가득한 일본정원, 리츠린 정원</p>
+          <p class="attraction-txt">
+            다카마쓰 대표 명소 리츠린 정원은 에도시대부터 사랑받아온 정원으로, 아름다운 연못과 다리가 어우러진 산책 명소에요.
+          </p>
+        </div>
+      </div><!--attraction-->
+      <div class="attraction">
+        <div class="attraction-img">
+          <img src="./images/attraction/sub_attraction02.jpg" alt="나오시마">
+        </div>
+        <div class="attraction-info">
+          <p class="attraction-title">예술이 살아있는 섬, 나오시마</p>
+          <p class="attraction-txt">
+            현대 미술관과 야외 작품들이 조용한 바다 마을 곳곳에 스며든, 감성과 여유를 함께 누릴 수 있는 예술 섬이에요.
+          </p>
+        </div>
+      </div><!--attraction-->
+      <div class="attraction">
+        <div class="attraction-img">
+          <img src="./images/attraction/sub_attraction03.jpg" alt="사누키 우동">
+        </div>
+        <div class="attraction-info">
+          <p class="attraction-title">우동의 본고장 다운, 쫄깃한 면발의 사누키 우동</p>
+          <p class="attraction-txt">
+            카가와현 명물 NO.1은 단연코 우동이라고 말할 수 있는 탱글한 수타면과 깔끔한 이리코 육수의 조합이 깊은 풍미를 경험해보세요!
+          </p>
+        </div>
+      </div><!--attraction-->
+      <div class="attraction">
+        <div class="attraction-img">
+          <img src="./images/attraction/sub_attraction04.jpg" alt="고토히라">
+        </div>
+        <div class="attraction-info">
+          <p class="attraction-title">천천히 쉬어가는 온천길 고토히라 온천마을</p>
+          <p class="attraction-txt">
+            곤피라 신사 오르막길 따라 료칸과 온천이 이어 소도시 특유의 정취를 느끼며 거닐거나 일본 전통 온천을 즐길 수 있어요.
+          </p>
+        </div>
+      </div><!--attraction-->
+    </section>
+  </div>
+
+  <!-- special ticket -->
+  <div class="ticket-title-outer">
+    <div class="ticket-logo-title">
+      <div class="logo"></div>
+      <p class="ticket-title">&nbsp;X&nbsp;카가와현</p>
+    </div><!--ticket title-->
+    <p class="ticket-title">
+      인천 - 다카마쓰 직항 특가 항공권 오픈!
+    </p>
+  </div><!--ticket title outer-->
+
+  <input type="radio" name="rad-ticket" id="rad-ticket-default" checked>
+  <input type="radio" name="rad-ticket" id="rad-ticket-start">
+  <input type="radio" name="rad-ticket" id="rad-ticket-end">
+  <div class="special-ticket-box">
+    <div class="ticket-logo-title pc">
+      <div class="logo"></div>
+      <p class="ticket-title">&nbsp;X&nbsp;카가와현</p>
+    </div><!--ticket title-->
+
+    <div class="ticket-info-container">
+      <div class="ticket-info">
+        <div class="path">
+          <p class="departure">인천 ICN</p>
+          <i class="fa-solid fa-plane"></i>
+          <p class="destination">다카마쓰 TAK</p>
+        </div><!--path-->
+        <p class="date">탑승 기간: 25년 6월 1일 ~ 7월 24일</p>
+      </div><!--ticket info-->
+  
+      <div class="schedule">
+        <p class="schedule-title mobile">취항 스케줄</p>
+        <div class="start-info schedule-info">
+          <p class="info-title mobile">출발편</p>
+          <div class="info-txt">
+            <p class="departure">
+              <span class="pc">인천 </span>ICN<br>
+              <span class="time">08:45</span>
+            </p>
+            <i class="fa-solid fa-plane"></i>
+            <p class="destination">
+              <span class="pc">다카마쓰 </span>TAK<br>
+              <span class="time">10:30</span>
+            </p>
+            <p class="time">1시간 45분 소요</p>
+          </div><!--path-->
+        </div><!--start info-->
+    
+        <div class="end-info schedule-info">
+          <p class="info-title mobile">도착편</p>
+          <div class="info-txt">
+            <p class="departure">
+              <span class="pc">다카마쓰 </span>TAK<br>
+              <span class="time">11:30</span>
+            </p>
+            <i class="fa-solid fa-plane"></i>
+            <p class="destination">
+              <span class="pc">인천 </span>ICN<br>
+              <span class="time">13:05</span>
+            </p>
+            <p class="time">1시간 45분 소요</p>
+          </div><!--path-->
+        </div><!--end info-->
+      </div><!--schedule-->
+  
+      <div class="ticket-btn-box pc">
+        <p>취항 스케줄<br/>확인하기</p>
+        <label for="rad-ticket-start">출발편</label>
+        <label for="rad-ticket-end">도착편</label>
+      </div>
+    </div><!--ticket info container-->
+
+    <svg class="ticket-price-svg">
+      <defs>
+        <linearGradient id="ticket-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="var(--point-color)" />
+          <stop offset="50%" stop-color="#35599C" />
+        </linearGradient>
+      </defs>
+      <text class="ticket-price" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="url(#ticket-gradient)">
+        89,900원 부터
+      </text>
+    </svg>
+    <!-- <p class="ticket-price">89,900원 부터</p> -->
+    <p class="price-notice">*성인 1인 총액 요금(왕복)</p>
+    <a href="#!" class="special-ticket-btn">특가 항공권 예약하기</a>
+  </div><!--special ticket box-->
+
+  <!-- best-->
+  <div class="best-outer">
+    <!-- tour -->
+    <p class="section-title">
+      다카마쓰 인기 투어&centerdot;티켓
+    </p>
+    <section class="best-tour-section">
+      <div class="product">
+        <div class="product-img">
+          <div class="product-mark-icon"></div>
+          <img src="./images/sub_tour01.jpg" alt="투어1">
+        </div><!--product img-->
+        <div class="product-info">
+          <p class="product-title">
+            가가와 조이패스 1Week Free Pass (3시설)
+          </p>
+          <p class="star-rate"><i class="fa-solid fa-star"></i>4.3(976)</p>
+          <p class="product-price"><span class="price">34,300</span>원</p>
+          <p class="product-cartegory">
+            오사카 &centerdot; 입장권
+          </p>
+        </div><!--product info-->
+      </div><!--product-->
+      <div class="product">
+        <div class="product-img">
+          <div class="tag tag-minimum">최저가보장제</div>
+          <div class="product-mark-icon"></div>
+          <img src="./images/sub_tour02.jpg" alt="투어2">
+        </div><!--product img-->
+        <div class="product-info">
+          <p class="product-title">
+            JR ALL 시고쿠 레일패스 3,4,5,7일권(성인/아동)
+          </p>
+          <p class="star-rate"><i class="fa-solid fa-star"></i>4.5(400)</p>
+          <p class="product-price"><span class="price">56,600</span>원</p>
+          <p class="product-cartegory">
+            시고쿠 &centerdot; 교통편의
+          </p>
+        </div><!--product info-->
+      </div><!--product-->
+    </section>
+    <div class="more-btn tour-more-btn">전체보기</div>
+
+    <!-- lodging -->
+    <p class="section-title">다카마쓰 인기 숙소</p>
+    <section class="best-lodging-section">
+      <div class="product">
+        <div class="product-img">
+          <div class="tag tag-best">인기상품</div>
+          <div class="product-mark-icon"></div>
+          <img src="./images/sub_lodging01.jpg" alt="숙소1">
+        </div><!--product img-->
+        <div class="product-info">
+          <p class="product-title">
+            도미 인 다카마츠추오코엔마에 핫 스프링
+          </p>
+          <p class="star-rate"><i class="fa-solid fa-star"></i>4.6(958)</p>
+          <p class="product-price"><span class="sale">26%</span><span class="price">154,369</span>원</p>
+          <p class="product-cartegory">
+            다카마쓰 &centerdot; 숙박
+          </p>
+        </div><!--product info-->
+      </div><!--product-->
+      <div class="product">
+        <div class="product-img">
+          <div class="product-mark-icon"></div>
+          <img src="./images/sub_lodging02.jpg" alt="숙소2">
+        </div><!--product img-->
+        <div class="product-info">
+          <p class="product-title">
+            도미 인 다카마츠
+          </p>
+          <p class="star-rate"><i class="fa-solid fa-star"></i>4.3(976)</p>
+          <p class="product-price"><span class="price">132,369</span>원</p>
+          <p class="product-cartegory">
+            다카마쓰 &centerdot; 숙박
+          </p>
+        </div><!--product info-->
+      </div><!--product-->
+      <div class="product">
+        <div class="product-img">
+          <div class="product-mark-icon"></div>
+          <img src="./images/sub_lodging03.jpg" alt="숙소3">
+        </div><!--product img-->
+        <div class="product-info">
+          <p class="product-title">
+            다이와로이넷 호텔 다카마쓰
+          </p>
+          <p class="star-rate"><i class="fa-solid fa-star"></i>4.3(990)</p>
+          <p class="product-price"><span class="price">124,580</span>원</p>
+          <p class="product-cartegory">
+            다카마쓰 &centerdot; 숙박
+          </p>
+        </div><!--product info-->
+      </div><!--product-->
+      <div class="product">
+        <div class="product-img">
+          <div class="product-mark-icon"></div>
+          <img src="./images/sub_lodging04.jpg" alt="숙소4">
+        </div><!--product img-->
+        <div class="product-info">
+          <p class="product-title">
+            호텔 윙 인터내셔널 다카마쓰
+          </p>
+          <p class="star-rate"><i class="fa-solid fa-star"></i>4.5(464)</p>
+          <p class="product-price"><span class="price">91,897</span>원</p>
+          <p class="product-cartegory">
+            다카마쓰 &centerdot; 숙박
+          </p>
+        </div><!--product info-->
+      </div><!--product-->
+    </section>
+    <div class="more-btn">전체보기</div>
+  </div><!--best outer-->
+
+  <!-- similar -->
+  <p class="section-title">비슷한 여행 기획전</p>
+  <section class="similar-section">
+    <div class="similar">
+      <div class="similar-img">
+        <img src="./images/sub_similar01.jpg" alt="기획전1">
+      </div>
+      <div class="similar-info">
+        <p class="similar-title">
+          특별한 스페인, 프라이빗 차량투어
+        </p>
+        <p class="similar-hash">
+          <span>#스페인</span>
+          <span>#프라이빗</span>
+        </p>
+      </div><!--similar info-->
+    </div><!--similar-->
+    <div class="similar">
+      <div class="similar-img">
+        <img src="./images/sub_similar02.jpg" alt="기획전2">
+      </div>
+      <div class="similar-info">
+        <p class="similar-title">
+          치앙마이로 떠나는 다채로운 여행
+        </p>
+        <p class="similar-hash">
+          <span>#치앙마이</span>
+          <span>#힐링여행</span>
+        </p>
+      </div><!--similar info-->
+    </div><!--similar-->
+    <div class="similar">
+      <div class="similar-img">
+        <img src="./images/sub_similar03.jpg" alt="기획전3">
+      </div>
+      <div class="similar-info">
+        <p class="similar-title">
+          오키나와에서 시원한 여름을!
+        </p>
+        <p class="similar-hash">
+          <span>#오키나와</span>
+          <span>#여름휴가</span>
+        </p>
+      </div><!--similar info-->
+    </div><!--similar-->
+    <div class="similar">
+      <div class="similar-img">
+        <img src="./images/sub_similar04.jpg" alt="기획전4">
+      </div>
+      <div class="similar-info">
+        <p class="similar-title">
+          미야코지마 해변 스냅투어
+        </p>
+        <p class="similar-hash">
+          <span>#미야코지마</span>
+          <span>#인생샷</span>
+        </p>
+      </div><!--similar info-->
+    </div><!--similar-->
+  </section>
+
+  <!-- footer -->
+  <div class="notice-outer">
+    <div class="notice">
+      <p class="notice-title">공지사항</p>
+      <div class="notice-frame">
+        <ul class="notice-txt">
+          <li>항공권 취소/변경 및 접수시간 변경 안내</li>
+          <li> 최초 발권 후 24시간 이내 환불 처리 방침 변경 항공사(국제선)안내</li>
+          <li>비엣젯 항공 국제선 환불/크레딧쉘/No-show 규정 안내</li>
+          <li>에어부산 항공사 인천공항 터미널 이전 안내 (탑승일 25.07.29 00시 부)</li>
+          <li>항공권 취소/변경 및 접수시간 변경 안내</li>
+        </ul>
+      </div><!--notice frame-->
+      <div class="notice-control-box">
+        <i class="fa-solid fa-chevron-left"></i>
+        <i class="fa-solid fa-play"></i>
+        <i class="fa-solid fa-chevron-right"></i>
+        <i class="fa-solid fa-plus"></i>
+      </div><!--notice control-box-->
+    </div><!--notice-->
+  </div>
+
+  <footer class="footer-top">
+    <div class="customer-center footer-menu">
+      <p class="footer-title">고객지원실 운영안내<i class="fa-solid fa-chevron-down open-i"></i><i class="fa-solid fa-chevron-up close-i"></i></p>
+      <div class="customer-center-info footer-txt">
+        <p>채팅상담 연중무휴 24시간</p>
+        <p>유선상담 연중무휴 09:00-18:00</p>
+        <p>유선상담 1670-8208</p>
+      </div>
+      <a href="#!" class="customer-center-btn">문의하기</a>
+    </div><!--customer center-->
+    <div class="footer-menu">
+      <p class="footer-title">소개<i class="fa-solid fa-chevron-down open-i"></i><i class="fa-solid fa-chevron-up close-i"></i></p>
+      <ul class="footer-txt">
+        <li>회사소개</li>
+        <li>채용</li>
+        <li>공고</li>
+      </ul>
+    </div>
+    <div class="footer-menu">
+      <p class="footer-title">파트너<i class="fa-solid fa-chevron-down open-i"></i><i class="fa-solid fa-chevron-up close-i"></i></p>
+      <ul class="footer-txt">
+        <li>파트너 홈</li>
+        <li>제휴 문의</li>
+        <li>광고 문의</li>
+      </ul>
+    </div>
+    <div class="footer-menu">
+      <p class="footer-title">지원<i class="fa-solid fa-chevron-down open-i"></i><i class="fa-solid fa-chevron-up close-i"></i></p>
+      <ul class="footer-txt">
+        <li>공지사항/FAQ</li>
+        <li>최저가 보장제</li>
+      </ul>
+    </div>
+  </footer><!--footer top-->
+  <footer class="footer-bottom">
+    <div class="term">
+      <a href="#!">이용 약관</a>
+      <a href="#!">개인정보 처리방침</a>
+      <a href="#!">취소 및 환불 정책</a>
+    </div><!--term-->
+    <nav class="footer-nav">
+      <div class="footer-nav-right">
+        <div class="sns">
+          <a href="#!"><img src="./images/logo/facebook.png" alt="페이스북"></a>
+          <a href="#!"><img src="./images/logo/blog.png" alt="블로그"></a>
+          <a href="#!"><img src="./images/logo/insta.png" alt="인스타"></a>
+          <a href="#!"><img src="./images/logo/youtube.png" alt="유튜브"></a>
+          <span class="divide-line">|</span>
+          <a href="#!"><img src="./images/logo/app_store.png" alt="앱스토어"></a>
+          <a href="#!"><img src="./images/logo/play_store.png" alt="플레이스토어"></a>
+        </div><!--sns-->
+        <select class="select-lang">
+          <option>한국어</option>
+          <option>English</option>
+          <option>日本語</option>
+        </select>
+      </div>
+    </nav>
+    <div class="footer-txt company-info">
+      <p>상호명 (주)마이리얼트립|</p>
+      <p>대표 이동건|</p>
+      <p>개인정보보호책임자 김형석|</p>
+      <p>사업자등록번호 209-81-55339 <a href="#!">사업자정보확인</a>|</p>
+      <p>통신판매업신고번호 2019-서울서초-0260|</p>
+      <p>관광사업등록번호 : 제2019-3호|</p>
+      <p>주소 서울특별시 서초구 강남대로 311, 드림플러스 강남 18층 (서초동, 한화생명보험빌딩)|</p>
+      <p>이메일 help@myrealtrip.com|</p>
+      <p>마케팅 문의 marketing@myrealtrip.com|</p>
+      <p>제휴 문의 partnership@myrealtrip.com</p>
+    </div><!--company info-->
+    <div class=" footer-txt description">
+      <p>자사는 서울특별시관광협회 공제영업보증보험에 가입되어 있습니다. 영업보증보험: 1.5억원 / 기획여행보증: 2억원</p>
+      <p>마이리얼트립은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 상품·거래정보 및 거래에 대하여 책임을 지지않습니다.</p>
+      <p>부득이한 사정에 의해 확정된 여행일정이 변경되는 경우 여행자의 사전 동의를 받습니다.</p>
+    </div><!--description-->
+  </footer><!--footer bottom-->
+  
+  <!-- search page -->
+  <aside class="search-page">
+    <div class="search-box mobile">
+      <div class="close-icon"></div>
+      <input type="search">
+      <div class="search-icon"></div>
+    </div><!--search box-->
+
+    <div class="search-wrapper">
+      <p class="search-box-title">인기 검색어</p>
+      <ul class="best-keyword-box">
+        <li class="keyword">일본</li>
+        <li class="keyword">공항 버스</li>
+      </ul><!--best keyword box-->
+  
+      <p class="search-box-title">인기 여행지</p>
+      <div class="best-trip-box">
+        <div class="best-trip">
+          <div class="trip-img">
+            <img src="./images/search/best_trip_01.jpg" alt="도쿄">
+          </div>
+          <p class="trip-title">도쿄</p>
+        </div><!--best trip-->
+        <div class="best-trip">
+          <div class="trip-img">
+            <img src="./images/search/best_trip_02.jpg" alt="제주도">
+          </div>
+          <p class="trip-title">제주도</p>
+        </div><!--best trip-->
+        <div class="best-trip">
+          <div class="trip-img">
+            <img src="./images/search/best_trip_03.jpg" alt="홍콩">
+          </div>
+          <p class="trip-title">홍콩</p>
+        </div><!--best trip-->
+        <div class="best-trip">
+          <div class="trip-img">
+            <img src="./images/search/best_trip_04.jpg" alt="오사카">
+          </div>
+          <p class="trip-title">오사카</p>
+        </div><!--best trip-->
+        <div class="best-trip">
+          <div class="trip-img">
+            <img src="./images/search/best_trip_05.jpg" alt="치앙마이">
+          </div>
+          <p class="trip-title">치앙마이</p>
+        </div><!--best trip-->
+        <div class="best-trip">
+          <div class="trip-img">
+            <img src="./images/search/best_trip_06.jpg" alt="파리">
+          </div>
+          <p class="trip-title">파리</p>
+        </div><!--best trip-->
+      </div><!--best trip box-->
+  
+      <p class="search-box-title">인기 검색 상품</p>
+      <div class="best-search-box">
+        <div class="best-search">
+          <div class="search-img">
+            <p class="search-rank">1</p>
+            <img src="./images/search/best_search_01.jpg" alt="인기 검색1">
+          </div>
+          <div class="search-info">
+            <p class="search-title">오사카 유니버셜 재팬 입장권</p>
+            <p class="price">89,000원 ~</p>
+          </div>
+        </div><!--best search-->
+        <div class="best-search">
+          <div class="search-img">
+            <p class="search-rank">2</p>
+            <img src="./images/search/best_search_02.jpg" alt="인기 검색2">
+          </div>
+          <div class="search-info">
+            <p class="search-title">바르셀로나 투어 패키지</p>
+            <p class="price">130,000원 ~</p>
+          </div>
+        </div><!--best search-->
+        <div class="best-search">
+          <div class="search-img">
+            <p class="search-rank">3</p>
+            <img src="./images/search/best_search_03.jpg" alt="인기 검색3">
+          </div>
+          <div class="search-info">
+            <p class="search-title">제주도 프리미엄 리무진 여행</p>
+            <p class="price">39,000원 ~</p>
+          </div>
+        </div><!--best search-->
+        <div class="best-search">
+          <div class="search-img">
+            <p class="search-rank">4</p>
+            <img src="./images/search/best_search_04.jpg" alt="인기 검색4">
+          </div>
+          <div class="search-info">
+            <p class="search-title">후쿠오카 온천 여행 패키지</p>
+            <p class="price">48,000원 ~</p>
+          </div>
+        </div><!--best search-->
+        <div class="best-search">
+          <div class="search-img">
+            <p class="search-rank">5</p>
+            <img src="./images/search/best_search_05.jpg" alt="인기 검색5">
+          </div>
+          <div class="search-info">
+            <p class="search-title">빅토리아피크 심포니오브라이츠 야경 야시장</p>
+            <p class="price">64,000원 ~</p>
+          </div>
+        </div><!--best search-->
+        <div class="best-search">
+          <div class="search-img">
+            <p class="search-rank">6</p>
+            <img src="./images/search/best_search_06.jpg" alt="인기 검색6">
+          </div>
+          <div class="search-info">
+            <p class="search-title">파리 에펠탑 우정여행 패키지</p>
+            <p class="price">82,000원 ~</p>
+          </div>
+        </div><!--best search-->
+      </div><!--best search box-->
+    </div><!--search wrapper-->
+  </aside>
+
+  <!-- recently page -->
+  <div class="recently-bg">
+    <aside class="recently-page">
+      <div class="recently-header">
+        <div class="close-icon"></div>
+        <p class="recently-title">최근 본 상품</p>
+        <p class="num">3</p>
+      </div><!--recently header-->
+  
+      <div class="recently-wrapper">
+        <p class="recently-notice">
+          최대 30개까지 조회가 가능합니다.
+        </p>
+        <div class="recently-container">
+          <p class="date">06월 15일(일)</p>
+          <div class="recently">
+            <div class="recently-img">
+              <div class="product-mark-icon"></div>
+              <img src="./images/recently/recently01.jpg" alt="최근 본 상품1">
+            </div>
+            <div class="recently-info">
+              <div class="delete-btn"></div>
+              <p class="recently-title">
+                파리 오르세 미술관 우선 입장권
+              </p>
+              <p class="recently-price"><span class="price">18,200</span>원</p>
+              <p class="star-rate"><i class="fa-solid fa-star"></i>4.8(315)</p>
+            </div>
+          </div><!--recently-->
+          <div class="recently">
+            <div class="recently-img">
+              <div class="product-mark-icon"></div>
+              <img src="./images/recently/recently02.jpg" alt="최근 본 상품2">
+            </div>
+            <div class="recently-info">
+              <div class="delete-btn"></div>
+              <p class="recently-title">
+                빅토리아피크 심포니오브라이츠 야경 야시장
+              </p>
+              <p class="recently-price"><span class="price">64,000</span>원</p>
+              <p class="star-rate"><i class="fa-solid fa-star"></i>4.7(599)</p>
+            </div>
+          </div><!--recently-->
+          <p class="date">06월 12일(목)</p>
+          <div class="recently">
+            <div class="recently-img">
+              <div class="product-mark-icon"></div>
+              <img src="./images/recently/recently03.jpg" alt="최근 본 상품3">
+            </div>
+            <div class="recently-info">
+              <div class="delete-btn"></div>
+              <p class="recently-title">
+                호텔 윙 인터내셔널 다카마쓰
+              </p>
+              <p class="recently-price"><span class="price">91,897</span>원</p>
+              <p class="star-rate"><i class="fa-solid fa-star"></i>4.5(464)</p>
+            </div>
+          </div><!--recently-->
+        </div><!--recently container-->
+      </div>
+    </aside><!--recently page-->
+  </div>
+
+  <!-- fix btn -->
+  <div class="fix-btn-box">
+    <a href="#!" class="top-btn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a><!--top btn-->
+    <div class="chat-btn">
+      <img src="./images/logo/chat_logo.png" alt="채널톡">
+    </div><!--chat btn-->
+  </div><!--fix btn box-->
+
+  <!-- nav bar -->
+  <nav class="nav-bar">
+    <div class="nav-item nav-menu">
+      <div class="nav-icon menu-icon"></div>
+      <p class="nav-label">전체메뉴</p>
+    </div>
+    <div class="nav-item nav-bookmark">
+      <div class="nav-icon bookmark-icon"></div>
+      <p class="nav-label">찜한 상품</p>
+    </div>
+    <a href="../index.html" class="nav-item nav-home">
+      <div class="nav-icon home-icon"></div>
+      <p class="nav-label">홈</p>
+    </a>
+    <div class="nav-item nav-recently">
+      <div class="nav-icon recently-icon"></div>
+      <p class="nav-label">최근 본 상품</p>
+    </div>
+    <div class="nav-item nav-my">
+      <div class="nav-icon my-icon"></div>
+      <p class="nav-label">마이페이지</p>
+    </div>
+  </nav>
+</body>
+</html>

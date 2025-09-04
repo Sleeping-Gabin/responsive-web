@@ -1,0 +1,73 @@
+/* default */
+:root {
+  --column-width: calc((100% - 10px * 5) / 6);
+  --point-color: #4991CE;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #1e1e1e;
+  
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-optical-sizing: auto;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #1e1e1e;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+/* 태블릿 */
+@media all and (min-width: 601px) and (max-width: 768px) {
+  :root {
+    --column-width: calc((100% - 10px * 7) / 8);
+  }
+
+  html {
+    font-size: 15px;
+  }
+}
+
+/* 태블릿 이상 */
+@media all and (min-width: 601px) {
+  
+}
+
+/* PC */
+@media all and (min-width: 769px) {
+}
+
+/* 저해상도 PC */
+@media all and (min-width: 769px) and (max-width: 1070px) {
+  :root {
+    --column-width: calc((100% - 10px * 11) / 12);
+  }
+}
+
+/* 고해상도 PC */
+@media all and (min-width: 1071px) {
+  :root {
+    --column-width: 80px;
+  }
+  
+}
