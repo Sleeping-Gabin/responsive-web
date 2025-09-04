@@ -30,7 +30,7 @@ PC / 태블릿 / 모바일에 대응되는 반응형 웹
 ### 기획
 2025.06.09 ~ 2025.06.20  
 아이템 선정 > 자사/경쟁사 분석 > 트렌드 도출 > 타겟 설정 > 콘셉트 설정 > 아이디어 스케치 > 시안  
-[기획서]()  
+[기획서](https://github.com/Sleeping-Gabin/responsive-web/blob/7045b7010f6e38b57147f5793624f05edcd97d0b/plan_myrealtrip.pdf)  
 <br>
 
 ### 역할
