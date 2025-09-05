@@ -17,12 +17,12 @@ PC / 태블릿 / 모바일에 대응되는 반응형 웹
 ![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![css](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white)
 ![js](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)
-![gsap](https://img.shields.io/badge/gsap-0AE448?style=for-the-badge&logo=gsap&logoColor=white)  
+![gsap](https://img.shields.io/badge/gsap-0e100f?style=for-the-badge&logo=gsap&logoColor=0ae448)  
 
 <br><br>
 
 ## 프로젝트 진행 과정
-2025.06.09 ~ 2025.06.30 
+2025.06.09 ~ 2025.06.30  
 5인 팀 프로젝트  
 팀원과 함께 기획을 진행하고 이후 각자 개발  
 <br>
@@ -30,7 +30,6 @@ PC / 태블릿 / 모바일에 대응되는 반응형 웹
 ### 기획
 2025.06.09 ~ 2025.06.20  
 아이템 선정 > 자사/경쟁사 분석 > 트렌드 도출 > 타겟 설정 > 콘셉트 설정 > 아이디어 스케치 > 시안  
-[기획서](https://github.com/Sleeping-Gabin/responsive-web/raw/main/plan_myrealtrip.pdf)  
 <br>
 
 ### 역할
@@ -43,7 +42,6 @@ PC / 태블릿 / 모바일에 대응되는 반응형 웹
 ### 개발
 2025.06.23 ~ 2025.06.30
 
-
 <br><br>
 
 ## 페이지
@@ -51,6 +49,8 @@ PC / 태블릿 / 모바일에 대응되는 반응형 웹
 |pc   |태블릿|모바일|
 |:---:|:---:|:---:|
 |![메인 pc](https://github.com/user-attachments/assets/e69c2a73-f7d9-4731-b7e3-61863f8a8a8c)|![메인 태블릿](https://github.com/user-attachments/assets/18fcc830-1804-4439-8627-4f4fe4667406)|![메인 모바일](https://github.com/user-attachments/assets/1f318182-9e67-45cd-8730-d85592bc7c66)|
+
+<br>
 
 ### 서브 페이지
 |pc   |태블릿|모바일|
@@ -61,6 +61,9 @@ PC / 태블릿 / 모바일에 대응되는 반응형 웹
 
 ## 구현 내용
 ### media query 사용
+모바일을 기준으로 하여 css로 스타일을 추가하고,  
+media query를 이용해 태블릿 / 태블릿 이상 / pc / 저해상도 pc / 고해상도 pc / 최대 배너 길이 이상에 해당하는 디바이스에서의 스타일을 변경하였다.  
+
 ```css
 /* ... */
 
@@ -76,14 +79,11 @@ PC / 태블릿 / 모바일에 대응되는 반응형 웹
 
 @media all and (min-width: 1440px) { /* ... */ }
 ```
-모바일을 기준으로 하여 css로 스타일을 추가하고,  
-media query를 이용해 태블릿 / 태블릿 이상 / pc / 저해상도 pc / 고해상도 pc / 최대 배너 길이 이상에 해당하는 디바이스에서의 스타일을 변경하였다.  
 <br>
 
 ### grid 레이아웃
-|pc          |태블릿       |모바일       |
-|:----------:|:----------:|:----------:|
-|![pc](https://github.com/user-attachments/assets/a2ba162a-c298-4daf-9f6c-7ba1fcf3e419)|![태블릿](https://github.com/user-attachments/assets/0b1a0495-35d9-418b-b65e-c827d748cd4f)|![모바일](https://github.com/user-attachments/assets/d2a68f91-c544-450b-9b26-ff57949fe8c2)|
+인기 여행지 섹션에서 grid로 모바일과 태블릿에서의 레이아웃을 구성하였다.  
+pc에서는 flex를 이용하고 마우스 호버와 애니메이션 효과를 추가했다.  
 
 <details>
 <summary>코드 보기</summary>
@@ -133,11 +133,16 @@ media query를 이용해 태블릿 / 태블릿 이상 / pc / 저해상도 pc / �
 ```
 </details>
 
-인기 여행지 섹션에서 grid로 모바일과 태블릿에서의 레이아웃을 구성하였다.  
-pc에서는 flex를 이용하고 마우스 호버와 애니메이션 효과를 추가했다.  
+|pc          |태블릿       |모바일       |
+|:----------:|:----------:|:----------:|
+|![pc](https://github.com/user-attachments/assets/a2ba162a-c298-4daf-9f6c-7ba1fcf3e419)|![태블릿](https://github.com/user-attachments/assets/0b1a0495-35d9-418b-b65e-c827d748cd4f)|![모바일](https://github.com/user-attachments/assets/d2a68f91-c544-450b-9b26-ff57949fe8c2)|
+
 <br>
 
 ### picture 태그 사용
+비주얼 메인과 배너에서 picture 태그를 이용해  
+각 디바이스에서 적절한 사이즈와 해상도의 이미지가 보이게 했다.  
+
 <details>
 <summary>코드 보기</summary>
 
@@ -156,15 +161,10 @@ pc에서는 flex를 이용하고 마우스 호버와 애니메이션 효과를 �
 </div>
 ```
 </details>
-
-비주얼 메인과 배너에서 picture 태그를 이용해  
-각 디바이스에서 적절한 사이즈와 해상도의 이미지가 보이게 했다.  
 <br>
 
 ### 메뉴/검색/최근 본 상품 drawer
-|pc          |태블릿       |모바일       |
-|:----------:|:----------:|:----------:|
-|![pc](https://github.com/user-attachments/assets/430c6648-d2e9-434b-9815-5ac8cb865851)|![태블릿](https://github.com/user-attachments/assets/4183651d-631f-4e96-be15-d3cb52b548e9)|![모바일](https://github.com/user-attachments/assets/c381996e-a14a-4092-a1fa-f9ec9f82599f)|
+태블릿/모바일에서 전체 메뉴, 최근 본 상품, 검색 창이 화면 옆에서 드나들도록 구현하였다.  
 
 <details>
 <summary>코드 보기</summary>
@@ -206,13 +206,16 @@ function toggleRecentlyPage() {
 ```
 </details>
 
-태블릿/모바일에서 전체 메뉴, 최근 본 상품, 검색 창이 화면 옆에서 드나들도록 구현하였다.  
+|pc          |태블릿       |모바일       |
+|:----------:|:----------:|:----------:|
+|![pc](https://github.com/user-attachments/assets/430c6648-d2e9-434b-9815-5ac8cb865851)|![태블릿](https://github.com/user-attachments/assets/4183651d-631f-4e96-be15-d3cb52b548e9)|![모바일](https://github.com/user-attachments/assets/c381996e-a14a-4092-a1fa-f9ec9f82599f)|
+
 <br>
 
 ### 디바이스별 적절한 레이아웃 구성
+디바이스의 특징에 맞게 콘텐츠의 레이아웃을 다르게 구성하였다.  
+
 |pc   |태블릿|모바일|
 |:---:|:---:|:---:|
 |![항공권 pc](https://github.com/user-attachments/assets/3d34c5fb-5199-4451-838e-861fd0a276b3)|![항공권 태블릿](https://github.com/user-attachments/assets/1ff9ec5e-5ac2-4283-b1cb-85f0fde25914)|![항공권 모바일](https://github.com/user-attachments/assets/23eee6bc-2c69-4c93-9e06-d6db3373c191)|
 |![테마 pc](https://github.com/user-attachments/assets/c0cd9df7-e755-427b-a337-a85787ea2c40)|![테마 태블릿](https://github.com/user-attachments/assets/f837ac15-f95f-42f3-98f6-c5d81c32171a)|![테마 모바일](https://github.com/user-attachments/assets/6659fdb8-6734-42e6-8db4-b4710bd4ce21)|
-
-디바이스의 특징에 맞게 콘텐츠의 레이아웃을 다르게 구성하였다.
