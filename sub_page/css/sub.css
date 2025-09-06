@@ -392,6 +392,11 @@
   width: calc((100% - 10px) / 2);
 }
 
+.best-tour-section .product:nth-of-type(3),
+.best-tour-section .product:nth-of-type(4) {
+  display: none;
+}
+
 .tour-more-btn {
   margin-bottom: 100px;
 }
@@ -874,11 +879,17 @@
     transform: scale(1.02);
   }
 
-  .best-tour-section .product .product-img .product-mark-icon {
-    width: 40px;
-    height: 40px;
+  /* ----- best tour ----- */
+  .best-tour-section .product:nth-of-type(3),
+  .best-tour-section .product:nth-of-type(4) {
+    display: block;
   }
 
+  .best-tour-section .product {
+    width: calc(var(--column-width) * 3 + 10px * 2);
+  }
+
+  /* ----- best lodging ----- */
   .best-lodging-section .product:nth-of-type(3),
   .best-lodging-section .product:nth-of-type(4) {
     display: block;
